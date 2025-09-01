@@ -24,8 +24,9 @@
   font-size: 1.6rem;
 }
 
-html {
+html, body {
   background-color: var(--secondary-color);
+  overflow-x: hidden;
 }
 
 .wrapper-inline {
@@ -307,7 +308,7 @@ main {
     color: var(--primary-color);
   }
 
-  .benefit-card {
+  .benefit-card, .benefit-card-right {
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -416,6 +417,7 @@ main {
       background-color: #0048ff;
       color: var(--secondary-color);
       transform: scale(1.021);
+      cursor: pointer;
     }
   }
 }
