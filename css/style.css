@@ -29,9 +29,11 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Prevent body scroll when mobile menu is open */
-body.no-scroll {
-  overflow: hidden;
+/* THE DEFINITIVE SCROLL LOCK */
+html.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll; /* Prevents content shift */
 }
 
 .wrapper-inline {
@@ -197,6 +199,10 @@ header h1 {
 
 .mobile-nav ul li {
   width: 100%;
+}
+
+.mobile-nav ul li button {
+  justify-self: center;
 }
 
 .mobile-nav ul li a {
