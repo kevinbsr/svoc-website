@@ -1,3 +1,40 @@
+// ---------------------- HAMBURGER MENU ----------------------
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const mobileNav = document.querySelector('.mobile-nav');
+const navLinks = document.querySelectorAll('.mobile-nav a, .mobile-nav .mobile-button');
+const body = document.body;
+
+// Main function to open/close the menu
+function handleMenuToggle() {
+    // Check if the menu is currently active
+    const isActive = hamburgerMenu.classList.contains('active');
+
+    if (isActive) {
+        // If it's active, close it
+        hamburgerMenu.classList.remove('active');
+        mobileNav.classList.remove('active');
+        body.classList.remove('no-scroll');
+    } else {
+        // If it's not active, open it
+        hamburgerMenu.classList.add('active');
+        mobileNav.classList.add('active');
+        body.classList.add('no-scroll');
+    }
+}
+
+// Function to explicitly close the menu (for links)
+function closeMenu() {
+    hamburgerMenu.classList.remove('active');
+    mobileNav.classList.remove('active');
+    body.classList.remove('no-scroll');
+}
+
+// Add event listeners
+hamburgerMenu.addEventListener('click', handleMenuToggle);
+navLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+
 // ---------------------- CAROUSEL ----------------------
 
 const galleryWrapper = document.querySelector(".courses-gallery-wrapper");
