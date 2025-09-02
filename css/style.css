@@ -163,7 +163,7 @@ header h1 {
 
 .hamburger-menu.active {
   position: fixed;
-  top: 3.5rem;
+  top: 2.5rem;
   right: 2.4rem;
 }
 
@@ -178,7 +178,7 @@ header h1 {
   right: -100%;
   width: 100%;
   height: 100vh;
-  background-color: var(--accent-color);
+  background: linear-gradient(to top, #0a2bd7, #4e6bff); 
   box-shadow: -0.2rem 0 0.5rem rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
   z-index: 1000;
@@ -945,7 +945,207 @@ footer {
         padding: 2.4rem;
       }
     }
+
+    .be-part {
+      /* padding: 2.4rem; */
+      gap: 3.2rem;
+  
+      h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+  
+      .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        .stat {  
+          span,
+          .type {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  
+    button {
+      height: 6.4rem;
+      width: 100%;
+  
+      background: linear-gradient(to right, #0a2bd7, #4e6bff);  
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: linear-gradient(to left, #0048ff, #4e6bff);
+      }
+    }
   }
 
+  #professors {
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .card, .card:nth-child(odd) {
+      padding: 0;
+
+      flex-direction: column;
+      background: linear-gradient(to bottom, #0a2bd7, #4e6bff); 
+      max-height: fit-content;
+      
+
+      img {
+        align-self: center;
+        height: auto;
+        width: 100%;
+      }
+
+      .text-infos {
+        text-align: center;
+        padding-inline: 0;
+        padding: 2.4rem;
+
+        .card-header {
+          h3 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+          }
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #e6e6e6;
+          }
+        }
+
+        .card-body {
+          margin-top: 2rem;
+          padding-right: 0;
+          text-align: start;
+
+          p {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+    .card:nth-child(odd) {
+      background: linear-gradient(to top, #0a2bd7, #4e6bff); 
+    }
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
   
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+  
+    .alumni-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to bottom, #0a2cd7, #4e6cff);
+      color: var(--secondary-color);
+      
+      height: fit-content;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 3.2rem;
+      }
+  
+      .text-infos {
+        text-align: center;
+        padding: 3.2rem 2.4rem;
+        margin: 0;
+        
+        .card-header {
+          h3 {
+            font-size: 2.4rem;
+            color: var(--secondary-color);
+          }
+          
+          p {
+            color: #e6e6e6;
+          }
+        }
+        
+        .card-body {
+          margin-top: 1rem;
+          text-align: start;
+          
+          p {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+
+  #contacts {
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+  
+    p {
+      font-size: 1.4rem;
+    }
+  
+    .social-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: none;
+      gap: 2rem 2rem;
+      margin-top: 2.4rem;
+  
+      .facebook,
+      .instagram,
+      .twitter,
+      .youtube {
+        margin: 0;
+        border: 2px solid var(--accent-color);
+        padding: 1rem 2rem;
+        border-radius: 3.2rem;
+
+  
+        a {
+          font-size: 1.6rem;
+  
+          img {
+            width: 2.4rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    height: 25rem;
+  
+    .institutional {
+      text-align: center;
+    }
+  }
+
 }
