@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #f8f8f8;
+  --accent-color: #0a2bd7;
+  --secondary-accent-color: #006aff;
+  --gradient-color: linear-gradient(to right, #0033ff50, #d9d9d900);
+  --gradient-color-flip: linear-gradient(to left, #0033ff50, #d9d9d900);
+  --font-family: "Manrope", sans-serif;
+
+  font-size: 62.5%;
+}
+
+.title-text {
+  text-align: start;
+}
+
+.consultor-card {
+  display: flex;
+  margin-block: 6.4rem;
+  gap: 1.6rem;
+
+  img {
+    border-radius: 3.2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    max-height: 50rem;
+    width: auto;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+
+    background: linear-gradient(
+      to top,
+      rgba(10, 44, 215, 0.1),
+      rgb(78, 107, 255, 0.1)
+    );
+    border: 1px solid rgba(0, 55, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 1.6rem;
+    border-radius: 3.2rem;
+
+    .consultor-info {
+      padding-bottom: 3.2rem;
+
+      h2 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.6rem;
+        color: var(--accent-color);
+      }
+    }
+
+    .service-description {
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    button {
+      background-color: var(--secondary-color);
+      border: 1px solid var(--accent-color);
+      color: var(--accent-color);
+      border-radius: 3.2rem;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--secondary-accent-color);
+        border: 2px solid var(--secondary-accent-color);
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+.roadmap {
+  width: 100%;
+
+  .section-title-text {
+    margin-bottom: 3.6rem;
+    text-align: start;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1.6rem;
+
+    border-radius: 3.2rem;
+    background: linear-gradient(
+      to top,
+      rgba(10, 44, 215, 0.1),
+      rgb(78, 107, 255, 0.1)
+    );
+    border: 1px solid rgba(0, 55, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    li {
+      text-align: start;
+      display: flex;
+      align-items: center;
+      margin-block: 2.4rem;
+
+      img {
+        max-width: 5.2rem;
+        height: auto;
+        margin-right: 1.6rem;
+      }
+    }
+  }
+}
+
+.dominant-topics {
+  .section-title-text {
+    margin-bottom: 3.6rem;
+    text-align: start;
+    margin-block: 4rem;
+
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+
+  .topics-cards {
+    margin-block: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+
+    .topic-card {
+      padding: 3.2rem;
+      border-radius: 3.2rem;
+      /* background: linear-gradient(to top, rgba(10, 44, 215, 0.1), rgb(78, 107, 255, 0.1)); */
+      border: 2px solid rgba(0, 55, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      text-align: start;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        padding-top: 0.5rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .topics-footer {
+    h2 {
+      font-size: 3.2rem;
+      margin-bottom: 2.4rem;
+    }
+    button {
+      background: var(--accent-color);
+      border: 2px solid var(--accent-color);
+      color: var(--secondary-color);
+      border-radius: 3.2rem;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--secondary-accent-color);
+        border: 2px solid var(--secondary-accent-color);
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .title-text {
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .consultor-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roadmap {
+        .section-title-text {
+            h2 {
+                font-size: 3rem;
+                line-height: 1.2;
+            }
+            p {
+                padding-top: 1rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        ul li {
+            align-items: start;
+        }
+    }
+
+    .dominant-topics {
+        h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .topics-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+        }
+    }
+
+}
