@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f8f8f8;
+    --accent-color: #0a2bd7;
+}
+
+.title-text {
+    text-align: start;
+    margin-bottom: 4.8rem;
+}
+
+.title-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.title-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    gap: 3.2rem;
+}
+
+.project-card {
+    border-radius: 3.2rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.project-card:hover .project-info {
+    transform: translateY(0);
+}
+
+.project-info h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.project-info p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .title-text h1 {
+        font-size: 3rem;
+    }
+    .projects-gallery {
+        grid-template-columns: 1fr;
+    }
+    .project-card .project-info {
+        transform: translateY(0);
+        position: relative;
+        background: var(--primary-color);
+    }
+    .project-card:hover {
+        transform: none;
+    }
+}
