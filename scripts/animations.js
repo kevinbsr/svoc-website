@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
   
     // Animate header on page load
-    // gsap.from("header", {
-    //   y: -100,
-    //   opacity: 0,
-    //   duration: 1,
-    //   ease: "power3.out"
-    // });
+    gsap.from("header", {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out"
+    });
   
     // Animate hero text on page load
     gsap.from(".hero-text h1", {
