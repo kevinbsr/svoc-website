@@ -256,6 +256,10 @@ img {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+.course-card:hover {
+  cursor: pointer;
+}
+
 /* Navigation Buttons */
 .carousel-nav {
   display: none; /* Hidden on mobile where touch-scrolling is standard */
