@@ -41,12 +41,13 @@
     </header>
     <nav class="mobile-nav">
         <ul>
+            <li><a href="index.html">Início</a></li>
             <li><a href="consultoria.html">Consultoria</a></li>
             <li><a href="cursos.html">Nossos Cursos</a></li>
             <li><a href="projetos.html">Projetos & Obras</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li>
-                <button class="mobile-button">
+                <button onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline', '_blank')" class="mobile-button">
                     Virar aluno
                     <span class="material-symbols-outlined">school</span>
                 </button>
@@ -68,7 +69,7 @@
             <div class="wrapper">
                 <h2 class="section-title animate-on-scroll">Todos os Cursos</h2>
                 <div class="courses-grid stagger-animation">
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3120711', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3120711', '_blank')" class="course-card autocad animate-on-scroll">
                         <div class="card-content">
                             <h3>Autocad</h3>
                             <div class="card-footer">
@@ -77,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3115767', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3115767', '_blank')" class="course-card patologias animate-on-scroll">
                         <div class="card-content">
                             <h3>Patologias construtivas</h3>
                             <div class="card-footer">
@@ -86,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/2712652', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/2712652', '_blank')" class="course-card pericia animate-on-scroll">
                         <div class="card-content">
                             <h3>Perícia</h3>
                             <div class="card-footer">
@@ -95,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3116280', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3116280', '_blank')" class="course-card pericia-geral animate-on-scroll">
                         <div class="card-content">
                             <h3>Perícia para todas as áreas profissionais</h3>
                             <div class="card-footer">
@@ -104,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card regularizacao animate-on-scroll">
                         <div class="card-content">
                             <h3>Regularização de imóveis para arquitetos e engenheiros</h3>
                             <div class="card-footer">
@@ -113,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card gestao animate-on-scroll">
                         <div class="card-content">
                             <h3>Gestão de obras e projetos</h3>
                             <div class="card-footer">
@@ -125,9 +126,75 @@
                 </div>
             </div>
         </section>
+        <section id="faq" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title animate-on-scroll">Perguntas Frequentes</h2>
+                <div class="faq-container stagger-animation">
+                    
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer">
+                            <span>O acesso é vitalício?</span>
+                            <span class="material-symbols-outlined faq-icon">add</span>
+                        </button>
+                        <div class="faq-answer" id="faq1-answer">
+                            <div>
+                                <p>Sim, o acesso é vitalício para você ver e rever as aulas sempre que precisar, incluindo todas as atualizações futuras do curso que você adquiriu.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer">
+                            <span>O curso oferece certificado?</span>
+                            <span class="material-symbols-outlined faq-icon">add</span>
+                        </button>
+                        <div class="faq-answer" id="faq2-answer">
+                            <div>
+                                <p>Sim! Ao concluir 100% das aulas, você poderá emitir seu certificado diretamente na plataforma da Hotmart. Ele é válido e reconhecido em todo o território nacional.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer">
+                            <span>Quais são as formas de pagamento?</span>
+                            <span class="material-symbols-outlined faq-icon">add</span>
+                        </button>
+                        <div class="faq-answer" id="faq3-answer">
+                            <div>
+                                <p>Aceitamos PIX, boleto bancário e cartão de crédito em até 12x. A plataforma de pagamento é a Hotmart, 100% segura e confiável.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer">
+                            <span>Como posso tirar minhas dúvidas?</span>
+                            <span class="material-symbols-outlined faq-icon">add</span>
+                        </button>
+                        <div class="faq-answer" id="faq4-answer">
+                            <div>
+                                <p>Você pode tirar todas as suas dúvidas diretamente na área de membros da Hotmart, abaixo de cada aula. Nossa equipe de suporte está sempre pronta para ajudar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq5-answer">
+                            <span>Para quem são os cursos?</span>
+                            <span class="material-symbols-outlined faq-icon">add</span>
+                        </button>
+                        <div class="faq-answer" id="faq5-answer">
+                            <div>
+                                <p>Nossos cursos são voltados para estudantes e profissionais de engenharia e arquitetura que buscam conhecimento técnico e prático para se destacarem no mercado de trabalho e atuarem com mais segurança em suas áreas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer class="site-footer section-padding">
         <div class="wrapper">
             <div class="footer-company">
@@ -145,3 +212,4 @@
     <script src="scripts/animations.js"></script>
 </body>
 </html>
+

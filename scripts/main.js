@@ -67,3 +67,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // --- END: Clean Carousel Logic ---
 });
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+if (faqItems.length) {
+    faqItems.forEach(item => {
+        const questionButton = item.querySelector('.faq-question');
+        const answerWrapper = item.querySelector('.faq-answer');
+        const answerContent = answerWrapper.firstElementChild; // The actual <p> tag
+
+        questionButton.addEventListener('click', () => {
+            const isOpened = item.classList.contains('active');
+            
+            // Close all other items for a clean accordion effect
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+
+            // Open the clicked item if it wasn't already open
+            if (!isOpened) {
+                item.classList.add('active');
+                questionButton.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+}
