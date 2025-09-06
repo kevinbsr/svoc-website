@@ -1,263 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVoc - A Melhor Escola de Arquitetura e Engenharia</title>
+    
+    <!-- Link to the single, refactored CSS file -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link href="css/animations.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
-  <body>
-    <header class="wrapper-inline wrapper-block">
-      <a href="index.html"><h1><span id="bolder">SV</span>oc</h1></a>
+</head>
+<body>
 
-      <div class="header-right">
-        <nav class="desktop-nav">
-          <ul>
+    <header class="site-header">
+        <div class="wrapper">
+            <a href="index.html" class="site-logo">
+                <h1><span class="bolder">SV</span>oc</h1>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="consultoria.html">Consultoria</a></li>
+                    <li><a href="cursos.html">Nossos Cursos</a></li>
+                    <li><a href="projetos.html">Projetos & Obras</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="desktop-button">
+                    Virar aluno
+                    <span class="material-symbols-outlined">school</span>
+                </button>
+                <div class="hamburger-menu" aria-label="Abrir menu" role="button" aria-expanded="false">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
             <li><a href="consultoria.html">Consultoria</a></li>
             <li><a href="cursos.html">Nossos Cursos</a></li>
             <li><a href="projetos.html">Projetos & Obras</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-          </ul>
-        </nav>
-
-        <div class="menu-container">
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <nav class="mobile-nav">
-            <ul>
-              <li><a href="consultoria.html">Consultoria</a></li>
-              <li><a href="cursos.html">Nossos Cursos</a></li>
-              <li><a href="projetos.html">Projetos & Obras</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li>
+            <li>
                 <button class="mobile-button">
-                  Virar aluno
-                  <span class="material-symbols-outlined">school</span>
+                    Virar aluno
+                    <span class="material-symbols-outlined">school</span>
                 </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        
-        <button class="desktop-button">
-          Virar aluno
-          <span class="material-symbols-outlined">school</span>
-        </button>
-      </div>
-    </header>
-    <main>
-      <div class="hero-text">
-        <h1>A melhor escola de Arquitetura e Engenharia do Brasil.</h1>
-        <p>Mais de 30 anos de experiência em um único lugar!</p>
-      </div>
-      <div class="container">
-        <button class="arrow-left control" aria-label="Previous slide">&lt;</button>
-        <button class="arrow-right control" aria-label="Next slide">&gt;</button>
-        <div class="courses-gallery-wrapper">
-          <div class="courses-gallery">
-            <div class="course-card item current-item">
-              <div class="card-title">
-                <h1>Perícia Técnica Judicial para arquitetos e engenheiros</h1>
-                <p>5.0 <img src="public/star.svg" alt="stars"></p>
-              </div>
-              <div class="card-footer">
-                <p>100 horas</p>
-                <p>R$ 350,00</p>
-              </div>
-            </div>
-            <div class="course-card item">
-              <div class="card-title">
-                <h1>Perícia Técnica Judicial para arquitetos e engenheiros</h1>
-                <p>5.0 <img src="public/star.svg" alt="stars"></p>
-              </div>
-              <div class="card-footer">
-                <p>100 horas</p>
-                <p>R$ 350,00</p>
-              </div>
-            </div>
-            <div class="course-card item">
-              <div class="card-title">
-                <h1>Perícia Técnica Judicial para arquitetos e engenheiros</h1>
-                <p>5.0 <img src="public/star.svg" alt="stars"></p>
-              </div>
-              <div class="card-footer">
-                <p>100 horas</p>
-                <p>R$ 350,00</p>
-              </div>
-            </div>
-            <div class="course-card item">
-              <div class="card-title">
-                <h1>Perícia Técnica Judicial para arquitetos e engenheiros</h1>
-                <p>5.0 <img src="public/star.svg" alt="stars"></p>
-              </div>
-              <div class="card-footer">
-                <p>100 horas</p>
-                <p>R$ 350,00</p>
-              </div>
-            </div>
-            <div class="course-card item">
-              <div class="card-title">
-                <h1>Perícia Técnica Judicial para arquitetos e engenheiros</h1>
-                <p>5.0 <img src="public/star.svg" alt="stars"></p>
-              </div>
-              <div class="card-footer">
-                <p>100 horas</p>
-                <p>R$ 350,00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="benefits" class="wrapper-block">
-        <h1>Dentro da Escola SVoc você tem acesso à</h1>
+            </li>
+        </ul>
+    </nav>
 
-        <div class="benefit-card">
-          <h2>Cursos técnicos para engenheiros e arquitetos</h2>
-          <p>A SVoc oferece capacitação técnica online para engenheiros e arquitetos, com cursos focados na aplicação prática e no dia a dia da profissão. A grande vantagem é a combinação da flexibilidade dos estudos 100% online com o suporte personalizado e direto com a instrutora, garantindo um aprendizado eficiente e de aplicabilidade imediata.</p>
-        </div>
-        <div class="benefit-card-right">
-          <h2>Certificado válido e reconhecido em todo o Brasil</h2>
-          <p>O certificado da SVoc amplia suas oportunidades de trabalho em todo o Brasil, garantindo que sua especialização técnica tenha credibilidade e seja reconhecida profissionalmente em qualquer estado.</p>
-        </div>
-        <div class="benefit-card">
-          <h2>+100 videoaulas e muito material didático de apoio</h2>
-          <p>A grande quantidade de videoaulas garante um aprendizado profundo e detalhado, enquanto o material de apoio transforma essa teoria em ação, fornecendo ferramentas práticas para uso imediato e consulta contínua na sua carreira.</p>
-        </div>
-        <div class="be-part">
-          <h2>Estamos em todos os lugares, dentro e fora do Brasil.</h2>
-          <div class="stats-container">
-            <div class="stat">
-              <div class="type">+</div>
-              <span class="counter" style="--from:0; --to:100; --time:4s;"></span>
-              <div class="type">alunos</div>
+    <main>
+        <section class="hero section-padding animate-on-scroll">
+            <div class="wrapper">
+                <div class="hero-text">
+                    <h1>A melhor escola de Arquitetura e Engenharia do Brasil.</h1>
+                    <p>Mais de 30 anos de experiência em um único lugar!</p>
+                </div>
             </div>
-            <div class="stat">
-              <span class="counter" style="--from:0; --to:10; --time:2s;"></span>
-              <div class="type">estados</div>
+        </section>
+
+        <section class="section-padding courses-carousel-section">
+            <div class="wrapper animate-on-scroll">
+                <h2 class="section-title">Cursos em destaque</h2>
+                <div class="carousel-container">
+                    <div class="courses-gallery-wrapper" id="galleryWrapper">
+                        <div class="courses-gallery">
+                            <!-- Card 1 -->
+                            <div class="course-card">
+                                <div class="card-content">
+                                    <h3>Perícia Técnica Judicial</h3>
+                                    <div class="card-footer">
+                                        <span>100 horas</span>
+                                        <span>R$ 350,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="course-card">
+                                <div class="card-content">
+                                    <h3>Gestão de Obras</h3>
+                                    <div class="card-footer">
+                                        <span>80 horas</span>
+                                        <span>R$ 290,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="course-card">
+                                <div class="card-content">
+                                    <h3>Regularização de Imóveis</h3>
+                                    <div class="card-footer">
+                                        <span>60 horas</span>
+                                        <span>R$ 250,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="course-card">
+                                <div class="card-content">
+                                    <h3>Orçamento de Obras</h3>
+                                    <div class="card-footer">
+                                        <span>70 horas</span>
+                                        <span>R$ 280,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="course-card">
+                                <div class="card-content">
+                                    <h3>Tecnologia BIM</h3>
+                                    <div class="card-footer">
+                                        <span>90 horas</span>
+                                        <span>R$ 320,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-button prev" aria-label="Curso anterior" aria-controls="galleryWrapper">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button class="carousel-button next" aria-label="Próximo curso" aria-controls="galleryWrapper">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="stat">
-              <span class="counter" style="--from:0; --to:3; --time:3s;"></span>
-              <div class="type">continentes</div>
+        </section>
+
+        <section id="benefits" class="section-padding">
+            <div class="wrapper animate-on-scroll">
+                <h2 class="section-title">Dentro da Escola SVoc você tem acesso à</h2>
+                <div class="benefit-grid stagger-animation">
+                    <div class="benefit-card">
+                        <h3>Cursos técnicos para engenheiros e arquitetos</h3>
+                        <p>Capacitação técnica online com foco na aplicação prática e no dia a dia da profissão.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Certificado válido e reconhecido</h3>
+                        <p>Amplie suas oportunidades de trabalho em todo o Brasil com uma especialização de credibilidade.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>+100 videoaulas e material de apoio</h3>
+                        <p>Aprendizado profundo e detalhado, com ferramentas práticas para uso imediato na sua carreira.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <button>Quero fazer parte</button>
-        </div>
-      </div>
-      <div id="professors" class="wrapper-block wrapper-inline">
-        <h2>Nossos professores</h2>
-        <div class="card">
-          <img src="public/sheila-pic.jpeg" alt="">
-          <div class="text-infos">
-            <div class="card-header">
-              <h3>Sheila Vieira</h3>
-              <p>Sócia fundadora da SVoc</p>
+        </section>
+
+        <section id="professors" class="section-padding">
+            <div class="wrapper animate-on-scroll">
+                <h2 class="section-title">Nossos professores</h2>
+                <div class="profile-card animate-on-scroll">
+                    <img src="public/sheila-pic.jpeg" alt="Foto de Sheila Vieira">
+                    <div class="text-infos">
+                        <h3>Sheila Vieira</h3>
+                        <p class="role">Sócia fundadora da SVoc</p>
+                        <p>Arquiteta e perita técnica judicial que une conhecimento prático em perícia, gestão de obras e regularização de imóveis com uma forte habilidade para ensinar.</p>
+                    </div>
+                </div>
+                <div class="profile-card reverse animate-on-scroll">
+                    <img src="public/rafael-pic.jpg" alt="Foto de Rafael Saraiva">
+                    <div class="text-infos">
+                        <h3>Rafael Saraiva</h3>
+                        <p class="role">Sócio diretor da SVoc</p>
+                        <p>Empresário na RsWoodworker e perito em marcenaria, trazendo a visão prática e de negócios para nossos cursos.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-              <p>Arquiteta e perita técnica judicial que se especializou em criar cursos online para profissionais da construção civil. Ela une seu conhecimento prático em áreas como perícia, gestão de obras e regularização de imóveis com uma forte habilidade para ensinar, oferecendo capacitação técnica com foco no dia a dia da profissão.</p>
+        </section>
+        <section id="testimonials" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">O que nossos alunos dizem</h2>
+                <div class="testimonial-grid stagger-animation">
+                    <div class="testimonial-card animate-on-scroll">
+                        <img src="public/placeholder-student-ricardo.jpg" alt="Foto do aluno Ricardo Reis Vitor">
+                        <p>"Um dos melhores cursos que já fiz. Muita qualidade e um conhecimento absurdo!"</p>
+                        <div class="student-info">
+                            <h3>Ricardo Reis Vitor</h3>
+                            <p class="course">Aluno de Regularização de Imóveis</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <img src="public/placeholder-student-angelica.jpg" alt="Foto da aluna Angélica Simões">
+                        <p>"A melhor coisa que fiz foi comprar os cursos da SVoc Cursos e realizar a mentoria com a professora Sheila Vieira, que de fato então me preparou para situações que vou vivenciar. Este é o diferencial da SVoc Cursos, trazer o seu aluno para a realidade do dia a dia, coisas que não aprendemos na faculdade e que são de extrema importância para a nossa trajetória profissional."</p>
+                        <div class="student-info">
+                            <h3>Angélica Simões</h3>
+                            <p class="course">Aluna de Gestão de Obras</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <img src="public/placeholder-student-ana.jpg" alt="Foto da aluna Ana Paula Xaves">
+                        <p>"Como engenheiro, os demais cursos de perícia não me davam a base técnica que eu precisava. A SV Cursos me deu a confiança de ingressar nesse ramo."</p>
+                        <div class="student-info">
+                            <h3>Ana Paula Xaves</h3>
+                            <p class="course">Aluna de Perícia Técnica</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="text-infos">
-            <div class="card-header">
-              <h3>Rafael Saraiva</h3>
-              <p>Sócio diretor da SVoc</p>
+        </section>
+        <section id="contact" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">Entre em contato</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Fale conosco</h3>
+                        <p>Tem alguma dúvida ou quer saber mais sobre nossos cursos? Preencha o formulário ao lado ou utilize um dos nossos canais de atendimento.</p>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <span class="material-symbols-outlined">email</span>
+                                <a href="mailto:contato@svoc.com.br">contato@svoc.com.br</a>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-symbols-outlined">call</span>
+                                <a href="tel:+5511999998888">+55 (24) 99881-0040</a>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <p>R. Vila Adelaíde, 1234 - Resende, RJ 27514-100</p>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook da SVoc" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 5 3 C 3.897 3 3 3.897 3 5 L 3 19 C 3 20.103 3.897 21 5 21 L 11.621094 21 L 14.414062 21 L 19 21 C 20.103 21 21 20.103 21 19 L 21 5 C 21 3.897 20.103 3 19 3 L 5 3 z M 5 5 L 19 5 L 19.001953 19 L 14.414062 19 L 14.414062 15.035156 L 16.779297 15.035156 L 17.130859 12.310547 L 14.429688 12.310547 L 14.429688 10.574219 C 14.429687 9.7862188 14.649297 9.2539062 15.779297 9.2539062 L 17.207031 9.2539062 L 17.207031 6.8222656 C 16.512031 6.7512656 15.814234 6.71675 15.115234 6.71875 C 13.041234 6.71875 11.621094 7.9845938 11.621094 10.308594 L 11.621094 12.314453 L 9.2773438 12.314453 L 9.2773438 15.039062 L 11.621094 15.039062 L 11.621094 19 L 5 19 L 5 5 z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram da SVoc" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X da SVoc" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 6 5 L 18 5 C 18.56503 5 19 5.4349698 19 6 L 19 18 C 19 18.56503 18.56503 19 18 19 L 6 19 C 5.4349698 19 5 18.56503 5 18 L 5 6 C 5 5.4349698 5.4349698 5 6 5 z M 6.7011719 7 L 10.642578 12.632812 L 6.90625 17 L 8.2382812 17 L 11.240234 13.484375 L 13.697266 17 L 17.537109 17 L 13.351562 11.009766 L 16.773438 7 L 15.462891 7 L 12.759766 10.160156 L 10.552734 7 L 6.7011719 7 z M 8.5664062 7.9882812 L 10.052734 7.9882812 L 15.683594 16.011719 L 14.1875 16.011719 L 8.5664062 7.9882812 z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube da SVoc" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 12 4 C 12 4 5.6992188 4.0003906 4.1992188 4.4003906 C 3.2992187 4.6003906 2.6003906 5.2992187 2.4003906 6.1992188 C 2.0003906 7.6992188 2 12 2 12 C 2 12 2.0003906 16.300781 2.4003906 17.800781 C 2.6003906 18.700781 3.2992187 19.299609 4.1992188 19.599609 C 5.6992188 19.999609 12 20 12 20 C 12 20 18.300781 19.999609 19.800781 19.599609 C 20.700781 19.399609 21.299609 18.700781 21.599609 17.800781 C 21.999609 16.300781 22 12 22 12 C 22 12 21.999609 7.6992187 21.599609 6.1992188 C 21.399609 5.2992187 20.700781 4.7003906 19.800781 4.4003906 C 18.300781 4.0003906 12 4 12 4 z M 12 6 C 14.9 6 18.500781 6.1007813 19.300781 6.3007812 C 19.500781 6.3007812 19.599219 6.4992187 19.699219 6.6992188 C 19.899219 7.5992187 20 10.3 20 12 C 20 13.7 19.899609 16.400781 19.599609 17.300781 C 19.599609 17.500781 19.399219 17.599219 19.199219 17.699219 C 18.499219 17.899219 14.9 18 12 18 C 9.1 18 5.4992187 17.899609 4.6992188 17.599609 C 4.4992187 17.599609 4.4007813 17.399219 4.3007812 17.199219 C 4.1007812 16.399219 4 13.7 4 12 C 4 10.3 4.1007813 7.5992187 4.3007812 6.6992188 C 4.3007812 6.4992187 4.4992187 6.4007813 4.6992188 6.3007812 C 5.4992187 6.1007812 9.1 6 12 6 z M 10 8.5 L 10 15.5 L 16 12 L 10 8.5 z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Sua mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-submit-button">
+                            Enviar mensagem
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="card-body">
-              <p>Empresário na RsWoodworker e perito em marcenaria.</p>
-            </div>
-          </div>
-          <img src="public/rafael-pic.jpg" alt="">
-        </div>
-      </div>
-      <div id="testimonials" class="wrapper-block wrapper-inline">
-        <h2>O que nossos alunos dizem</h2>
-        <div class="alumni-card">
-          <img src="public/ricardo-alumni-pic.jpg" alt="">
-          <div class="text-infos">
-            <div class="card-header">
-              <h3>Ricardo Reis Vitor</h3>
-              <p>Engenheiro Civil</p>
-            </div>
-            <div class="card-body">
-              <p>“Um dos melhores cursos que já fiz. Muita qualidade e um conhecimento absurdo!”</p>
-            </div>
-          </div>
-        </div>
-        <div class="alumni-card">
-          <img src="public/ana-alumni-pic.jpg" alt="">
-          <div class="text-infos">
-            <div class="card-header">
-              <h3>Ana Paula Xaves</h3>
-              <p>Engenheira de produção</p>
-            </div>
-            <div class="card-body">
-              <p>“Como engenheiro, os demais cursos de perícia não me davam a base técnica que eu precisava. A SV Cursos me deu a confiança de ingressar nesse ramo”</p>
-            </div>
-          </div>
-        </div>
-        <div class="alumni-card">
-          <img src="public/angelica-alumni-pic.jpg" alt="">
-          <div class="text-infos">
-            <div class="card-header">
-              <h3>Angélica Simões</h3>
-              <p>Engenheira civil</p>
-            </div>
-            <div class="card-body">
-              <p>“A melhor coisa que fiz foi comprar os cursos da SVoc Cursos e realizar a  mentoria com a professora Sheila Vieira, que de fato então me preparou  para situações que vou vivenciar. Este é o diferencial da SVoc Cursos,  trazer o seu aluno para a realidade do dia a dia, coisas que não  aprendemos na faculdade e que são de extrema importância para a nossa  trajetória profissional”</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contacts" class="wrapper-block wrapper-inline">
-        <h2>Quer falar conosco?</h2>
-        <p>Estamos prontos para tirar todas as suas dúvidas</p>
-        <div class="social-buttons">
-          <div class="facebook">
-            <a href="#" class="social-button">
-              <img src="public/facebook.svg" alt="Facebook link">
-              Facebook
-            </a>
-          </div>
-          <div class="instagram">
-            <a href="#" class="social-button">
-              <img src="public/instagram.svg" alt="Instagram link">
-              Instagram
-            </a>
-          </div>
-          <div class="twitter">
-            <a href="#" class="social-button">
-              <img src="public/x.svg" alt="X/Twitter link">
-              X/Twitter
-            </a>
-          </div>
-          <div class="youtube">
-            <a href="#" class="social-button">
-              <img src="public/youtube.svg" alt="Youtube link">
-              Youtube
-            </a>
-          </div>
-        </div>
+        </section>
     </main>
-    <footer class="wrapper-block wrapper-inline">
-      <div class="company">
-        <h2><span id="bolder">SV</span>oc cursos online</h2>
-        <p>A escola para que tem o DNA do sucesso!</p>
-      </div>
-      <div class="institutional">
-        <p>Copyright &copy; <span id="currentYear"></span> - Todos os direitos reservados.</p>
-        <hr>
-        <p>Feito por <a href="https://kevinbenevides.com.br">Kevin Benevides</a></p>
-      </div>
+
+    <footer class="site-footer section-padding">
+        <div class="wrapper">
+            <div class="footer-company">
+                <h2><span class="bolder">SV</span>oc</h2>
+                <p>A escola para quem tem o DNA do sucesso!</p>
+            </div>
+            <div class="footer-institutional">
+                <p>Copyright &copy; <span id="currentYear"></span> - Todos os direitos reservados.</p>
+                <p>Feito por <a href="https://kevinbenevides.com.br" target="_blank" rel="noopener noreferrer">Kevin Benevides</a></p>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <script src="scripts/main.js"></script>
     <script src="scripts/animations.js"></script>
-  </body>
+</body>
 </html>
+

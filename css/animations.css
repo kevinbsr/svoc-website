@@ -1,0 +1,36 @@
+/* ==========================================================================
+   ANIMATION STYLES (Corrected Logic)
+   ========================================================================== */
+
+/*
+ * Base state for individual elements and grid children.
+ * They start hidden and are ready for transition.
+*/
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* Ensure delay is not active until the parent is in view */
+    transition-delay: 0s; 
+}
+
+/*
+ * This class is added by JS to individual elements OR the parent grid container.
+ * This makes the element itself visible.
+*/
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*
+ * This is the key change. When the PARENT (.stagger-animation) gets the .in-view class,
+ * we apply a transition delay to its direct children. This creates the cascade.
+*/
+.stagger-animation.in-view > .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.stagger-animation.in-view > .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.stagger-animation.in-view > .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.stagger-animation.in-view > .animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+.stagger-animation.in-view > .animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+.stagger-animation.in-view > .animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+

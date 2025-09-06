@@ -1,87 +1,44 @@
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger);
-  
-    // Animate header on page load
-    gsap.from("header", {
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out"
-    });
-  
-    // Animate hero text on page load
-    gsap.from(".hero-text h1", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out"
-    });
-    gsap.from(".hero-text p", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.8,
-      ease: "power3.out"
-    });
-  
-    // Animate benefit cards on scroll
-    gsap.utils.toArray(".benefit-card").forEach(card => {
-      gsap.from(card, {
-        x: card.classList.contains('align-self-flex-end') ? 200 : -200,
-        opacity: 0,
-        duration: .2,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none"
-        }
-      });
-    });
+/**
+ * Corrected, performant scroll animation trigger.
+ * Observes both individual elements and parent containers for staggered animations.
+ */
+document.addEventListener('DOMContentLoaded', () => {
     
-    gsap.utils.toArray(".benefit-card-right").forEach(card => {
-      gsap.from(card, {
-        x: card.classList.contains('align-self-flex-end') ? -200 : 200,
-        opacity: 0,
-        duration: .2,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none"
-        }
-      });
+    // Select all elements that should be animated: 
+    // single items AND parent containers for staggering.
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll, .stagger-animation');
+
+    if (!elementsToAnimate.length) {
+        return;
+    }
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add .in-view to the observed element (could be a single item or a grid)
+                entry.target.classList.add('in-view');
+
+                // If it's a stagger container, we also need to make its children visible
+                // so they can participate in the transition.
+                if (entry.target.classList.contains('stagger-animation')) {
+                    const children = entry.target.querySelectorAll('.animate-on-scroll');
+                    children.forEach(child => {
+                        child.classList.add('in-view');
+                    });
+                }
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
     });
-  
-    // Animate professor cards on scroll
-    gsap.utils.toArray("#professors .card").forEach(card => {
-      gsap.from(card, {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none"
-        }
-      });
-    });
-  
-    // Animate testimonials on scroll
-    gsap.utils.toArray("#testimonials .alumni-card").forEach(card => {
-      gsap.from(card, {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none"
-        }
-      });
-    });
-  });
+});

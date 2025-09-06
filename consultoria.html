@@ -1,151 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoria</title>
+    <title>Consultoria - SVoc</title>
+    
+    <!-- Links to existing CSS and Fonts -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/consultoria.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
 <body>
-    <header class="wrapper-inline wrapper-block">
-        <a href="index.html"><h1><span id="bolder">SV</span>oc</h1></a>
 
-        <div class="header-right">
-          <nav class="desktop-nav">
-            <ul>
-                <li><a href="consultoria.html">Consultoria</a></li>
-                <li><a href="cursos.html">Nossos Cursos</a></li>
-                <li><a href="projetos.html">Projetos & Obras</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-          </nav>
-  
-          <div class="menu-container">
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-            <nav class="mobile-nav">
-              <ul>
-                <li><a href="consultoria.html">Consultoria</a></li>
-                <li><a href="cursos.html">Nossos Cursos</a></li>
-                <li><a href="projetos.html">Projetos & Obras</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li>
-                  <button class="mobile-button">
+    <!-- Reusing the exact same header for consistency -->
+    <header class="site-header">
+        <div class="wrapper">
+            <a href="index.html" class="site-logo">
+                <h1><span class="bolder">SV</span>oc</h1>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="consultoria.html">Consultoria</a></li>
+                    <li><a href="cursos.html">Nossos Cursos</a></li>
+                    <li><a href="projetos.html">Projetos & Obras</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="desktop-button">
                     Virar aluno
                     <span class="material-symbols-outlined">school</span>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          
-          <button class="desktop-button">
-            Virar aluno
-            <span class="material-symbols-outlined">school</span>
-          </button>
+                </button>
+                <div class="hamburger-menu" aria-label="Abrir menu" role="button" aria-expanded="false">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
         </div>
-      </header>
-    <main class="wrapper-inline wrapper-block">
+    </header>
+
+    <!-- Reusing the mobile navigation menu -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="consultoria.html">Consultoria</a></li>
+            <li><a href="cursos.html">Nossos Cursos</a></li>
+            <li><a href="projetos.html">Projetos & Obras</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+                <button class="mobile-button">
+                    Virar aluno
+                    <span class="material-symbols-outlined">school</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Page-specific Hero Section -->
+        <section class="hero section-padding">
+            <div class="wrapper animate-on-scroll">
+                <div class="hero-text">
+                    <h1>Consultoria Especializada em Arquitetura e Engenharia</h1>
+                    <p>Soluções práticas para destravar seus projetos e obras, com a experiência de quem está há 30 anos no mercado.</p>
+                </div>
+            </div>
+        </section>
+        <section id="consultants" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title animate-on-scroll">Conheça nossos consultores</h2>
+                
+                <!-- Reusing the existing .profile-card component -->
+                <div class="profile-card animate-on-scroll">
+                    <img src="public/sheila-pic.jpeg" alt="Foto da consultora Sheila Vieira">
+                    <div class="text-infos">
+                        <h3>Sheila Vieira</h3>
+                        <p class="role">Consultora Sênior e Sócia Fundadora</p>
+                        <p>Com mais de 30 anos de experiência prática em perícia, gestão de obras e regularização de imóveis, Sheila oferece uma visão estratégica e soluções eficazes para os desafios mais complexos do setor.</p>
+                        <a href="#" class="consultant-button">Agendar com a Sheila</a>
+                    </div>
+                </div>
         
-        <div class="title-text">
-            <h1>Um mundo cheio de oportunidades infinitas e potencial ilimitado.</h1>
-            <p>Além dos cursos vocês podem contar com a consultoria da nossa escola.</p>
-        </div>
-
-        <div class="consultor-card">
-            <img src="public/sheila-pic-2.jpg" alt="Sheila Vieira">
-            <div class="texts">
-                <div class="text-container">
-                    <div class="consultor-info">
-                        <h2>Arquiteta Sheila</h2>
-                        <p>Sua Parceira para Soluções Técnicas</p>
-                    </div>
-                    <div class="service-description">
-                        <p>Sabemos que a rotina da arquitetura e da engenharia é repleta de desafios complexos. Um laudo que não avança? Uma dúvida crucial sobre gestão de obras? Uma questão de perícia que parece sem solução?</p>
-                        <p>A Consultoria Tira Dúvidas é o seu canal direto com a experiência prática da Arq. Sheila Vieira. Em uma sessão online e exclusiva de até 1 hora, transformamos sua dúvida em um plano de ação claro e objetivo.</p>
+                <!-- Reusing the .profile-card component with the .reverse modifier -->
+                <div class="profile-card reverse animate-on-scroll">
+                    <img src="public/rafael-pic.jpg" alt="Foto do consultor Rafael Saraiva">
+                    <div class="text-infos">
+                        <h3>Rafael Saraiva</h3>
+                        <p class="role">Consultor Especialista e Sócio Diretor</p>
+                        <p>Empresário e especialista em execução, Rafael traz a perspectiva de negócios e a atenção aos detalhes técnicos, garantindo que cada plano de consultoria seja prático, viável e alinhado com os objetivos do cliente.</p>
+                        <a href="#" class="consultant-button">Agendar com o Rafael</a>
                     </div>
                 </div>
-                <button>Agendar Consultoria</button>
+        
             </div>
-        </div>
+        </section>
 
-        <div class="roadmap">
-            <div class="section-title-text">
-                <h2>Um processo simples e direto para sua evolução</h2>
-                <p>Nosso objetivo é ser um acelerador para sua carreira. Por isso, criamos um processo de consultoria sem burocracia, focado 100% no seu desafio.</p>
-            </div>
-            <ul>
-                <li>
-                    <img src="public/calendar.svg" alt="Agenda">
-                    Você clica no botão, fala diretamente conosco via WhatsApp para agendar o melhor dia e horário, e realiza o pagamento de forma segura.
-                </li>
-                <li>
-                    <img src="public/people.svg" alt="Chamada de Vídeo">
-                    No dia marcado, você e a Arq. Sheila se encontram online. Você apresenta seu caso, compartilha suas dúvidas e o trabalho começa.
-                </li>
-                <li>
-                    <img src="public/checklist.svg" alt="Checklist">
-                    Ao final da sessão, você terá as respostas que precisa e um direcionamento claro para aplicar a solução no seu projeto com total segurança.
-                </li>
-            </ul>
-        </div>
+        <!-- Services Section using the .benefit-card component style -->
 
-        <div class="dominant-topics">
-            <div class="section-title-text">
-                <h2>Da perícia à gestão: tópicos que dominamos</h2>
-                <p>Nossa consultoria abrange os desafios mais críticos e complexos da Arquitetura e Engenharia. Se a sua dúvida está em uma destas áreas, nós podemos ajudar:</p>
-            </div>
-            <div class="topics-cards">
-                <div class="topic-card">
-                    <h3>Perícia Técnica Judicial</h3>
-                    <p>Orientação em laudos, pareceres e atuação como perito.</p>
-                </div>
-                <div class="topic-card">
-                    <h3>Gestão e Fiscalização de Obras</h3>
-                    <p>Dúvidas sobre planejamento, controle de custos e cronogramas.</p>
-                </div>
-                <div class="topic-card">
-                    <h3>Regularização de Imóveis</h3>
-                    <p>Direcionamento sobre processos e legislação para legalizar uma edificação.</p>
-                </div>
-                <div class="topic-card">
-                    <h3>Patologias Construtivas</h3>
-                    <p>Análise e diagnóstico de falhas, vícios e problemas construtivos.</p>
-                </div>
-                <div class="topic-card">
-                    <h3>Laudos e Vistorias Técnicas</h3>
-                    <p>Estruturação de documentos técnicos com clareza e segurança.</p>
-                </div>
-                <div class="topic-card">
-                    <h3>Posicionamento Profissional</h3>
-                    <p>Mentoria sobre como se destacar e captar clientes no mercado.</p>
+        
+        <!-- "How it Works" Process Section -->
+        <section id="process" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">Como funciona a nossa consultoria</h2>
+                <div class="process-grid">
+                    <!-- Step 1 Card -->
+                    <div class="process-card animate-on-scroll">
+                        <span class="material-symbols-outlined">checklist</span>
+                        <h3>1. Diagnóstico Inicial</h3>
+                        <p>Realizamos uma análise completa das suas necessidades, desafios e objetivos para entender profundamente o cenário do seu projeto ou negócio.</p>
+                    </div>
+                    <!-- Step 2 Card -->
+                    <div class="process-card animate-on-scroll">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                        <h3>2. Plano Estratégico</h3>
+                        <p>Desenvolvemos um plano de ação personalizado, com soluções práticas e um cronograma claro, focado em entregar os melhores resultados de forma eficiente.</p>
+                    </div>
+                    <!-- Step 3 Card -->
+                    <div class="process-card animate-on-scroll">
+                        <span class="material-symbols-outlined">monitoring</span>
+                        <h3>3. Implementação e Suporte</h3>
+                        <p>Acompanhamos a execução do plano, oferecendo suporte contínuo para garantir que as metas sejam atingidas e os ajustes necessários sejam feitos no caminho.</p>
+                    </div>
                 </div>
             </div>
-            <div class="topics-footer">
-                <h2>Pronto para dar o próximo passo?</h2>
-                <button>Agende sua consultoria</button>
+        </section>
+
+        <section id="consultancy-topics" class="section-padding">
+            <div class="wrapper">
+                <h2 class="section-title">Nossas áreas de especialização</h2>
+                <div class="topics-grid">
+                    <!-- Topic Card 1 -->
+                    <div class="benefit-card animate-on-scroll">
+                        <h3>Gestão e Planejamento de Obras</h3>
+                        <p>Otimizamos cronogramas, orçamentos e equipes para garantir que sua obra seja entregue no prazo e com a máxima qualidade, evitando imprevistos e custos extras.</p>
+                    </div>
+                    <!-- Topic Card 2 -->
+                    <div class="benefit-card animate-on-scroll">
+                        <h3>Perícias Técnicas e Laudos</h3>
+                        <p>Oferecemos análises técnicas detalhadas e laudos precisos para processos judiciais, vistorias de vizinhança e avaliações de patologias construtivas.</p>
+                    </div>
+                    <!-- Topic Card 3 -->
+                    <div class="benefit-card animate-on-scroll">
+                        <h3>Regularização de Imóveis</h3>
+                        <p>Navegamos pela burocracia para regularizar seu imóvel junto aos órgãos competentes, garantindo a documentação necessária para venda ou financiamento.</p>
+                    </div>
+                    <!-- Topic Card 4 -->
+                    <div class="benefit-card animate-on-scroll">
+                        <h3>Orçamentos e Viabilidade</h3>
+                        <p>Realizamos estudos de viabilidade e elaboramos orçamentos assertivos que fornecem uma visão clara dos custos e do potencial de retorno do seu empreendimento.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="section-padding">
+            <div class="wrapper animate-on-scroll">
+                <div class="cta-content">
+                    <h2>Pronto para destravar seu projeto?</h2>
+                    <p>Agende uma conversa inicial sem compromisso e descubra como nossa experiência pode trabalhar a seu favor.</p>
+                    <a href="#" class="cta-button">Fale com um especialista</a>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer class="wrapper-block wrapper-inline">
-        <div class="company">
-            <h2><span id="bolder">SV</span>oc cursos online</h2>
-            <p>A escola para que tem o DNA do sucesso!</p>
-        </div>
-        <div class="institutional">
-            <p>Copyright &copy; <span id="currentYear"></span> - Todos os direitos reservados.</p>
-            <hr>
-            <p>Feito por <a href="https://kevinbenevides.com.br">Kevin Benevides</a></p>
+
+    <!-- Reusing the exact same footer for consistency -->
+    <footer class="site-footer section-padding">
+        <div class="wrapper">
+            <div class="footer-company">
+                <h2><span class="bolder">SV</span>oc</h2>
+                <p>A escola para quem tem o DNA do sucesso!</p>
+            </div>
+            <div class="footer-institutional">
+                <p>Copyright &copy; <span id="currentYear"></span> - Todos os direitos reservados.</p>
+                <p>Feito por <a href="https://kevinbenevides.com.br" target="_blank" rel="noopener noreferrer">Kevin Benevides</a></p>
+            </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- This script is shared across all pages -->
     <script src="scripts/main.js"></script>
     <script src="scripts/animations.js"></script>
 </body>
