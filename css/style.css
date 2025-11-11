@@ -192,14 +192,18 @@ img {
    4. MAIN CONTENT & COMPONENTS
    ========================================================================== */
 .hero .hero-text h1 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.6rem;
+  background-image: linear-gradient(to right,#007df9, #00c2ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .hero .hero-text p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   color: var(--text-muted);
 }
 
