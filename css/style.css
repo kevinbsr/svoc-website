@@ -12,13 +12,16 @@
   font-size: 62.5%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -30,7 +33,7 @@ body {
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   /* Offset content from the fixed header */
-  padding-top: 6.4rem; 
+  padding-top: 6.4rem;
 }
 
 body.no-scroll {
@@ -81,6 +84,10 @@ img {
   align-items: center;
 }
 
+.site-header img {
+  height: 5rem;
+}
+
 .site-header a {
   text-decoration: none;
   color: var(--primary-color);
@@ -96,7 +103,8 @@ img {
   font-weight: 800;
 }
 
-.desktop-nav, .desktop-button {
+.desktop-nav,
+.desktop-button {
   display: none;
 }
 
@@ -235,16 +243,17 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   color: var(--text-light);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
-  position: relative;   /* Anchor for the pseudo-element */
-  overflow: hidden;     /* Contains the zooming background */
-  z-index: 1;           /* Establishes a stacking context for content */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  position: relative; /* Anchor for the pseudo-element */
+  overflow: hidden; /* Contains the zooming background */
+  z-index: 1; /* Establishes a stacking context for content */
   cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
 }
 
 /* The ::before pseudo-element holds the background image and gradient */
 .course-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -262,22 +271,57 @@ img {
 }
 
 /* --- Assigning the specific background images --- */
-.course-card.pericia::before,
+.course-card.pericia::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/pericia.jpg");
+}
 .course-card.pericia-geral::before {
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../public/course-backgrounds/pericia.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/pericia-todas-areas.jpg");
 }
 .course-card.gestao::before {
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../public/course-backgrounds/gestao.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/gestao.jpg");
 }
 .course-card.patologias::before {
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../public/course-backgrounds/patologias.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/patologias.jpg");
 }
 .course-card.autocad::before {
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../public/course-backgrounds/autocad.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/Autocad.jpg");
 }
-/* Fallback for unassigned or future cards */
 .course-card.regularizacao::before {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../public/course-backgrounds/regularizacao.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/regularizacao.jpg");
+}
+.course-card.construsmart::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/construsmart.png");
+}
+.course-card.expert::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/expert.png");
+}
+.course-card.base-solida::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/base-solida.png");
+}
+.course-card.obra-total::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/obra-total.png");
+}
+.course-card.diagnostico-avancado::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/diagnostico-avancado.png");
+}
+.course-card.peritopro::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/peritopro.png");
+}
+.course-card.mao-na-obra::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("/images/course-backgrounds/combos/mao-na-obra.png");
 }
 
 .course-card .card-content {
@@ -301,7 +345,7 @@ img {
   font-size: 1.6rem;
   font-weight: 600;
   padding-top: 1.6rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .course-card:hover {
@@ -328,7 +372,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -337,7 +381,6 @@ img {
   color: var(--text-light);
   border-color: var(--accent-color);
 }
-
 
 #benefits .benefit-grid {
   display: grid;
@@ -363,7 +406,7 @@ img {
   overflow: hidden;
   margin-bottom: 2.4rem;
   text-align: left;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 }
 
 .profile-card img {
@@ -408,6 +451,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* NEW: Consistent min-height for visual stability on mobile/small screens */
+  min-height: 28rem;
+  transition: all 0.3s ease;
 }
 
 .testimonial-card img {
@@ -416,7 +462,7 @@ img {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 2.4rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card p {
@@ -438,6 +484,32 @@ img {
   font-weight: 600;
   font-size: 1.4rem;
   margin: 0;
+}
+
+@media (min-width: 769px) {
+  /* Bento Grid Layout */
+  #testimonials .testimonial-grid {
+    /* Mude para 2 colunas no desktop */
+    grid-template-columns: repeat(2, 1fr);
+    /* Garante que as linhas tenham uma altura mínima para o efeito Bento */
+    grid-auto-rows: minmax(25rem, auto);
+  }
+
+  /* Card 1 (Angélica Simões) - Ocupa as 2 colunas na linha de cima */
+  .testimonial-grid > .testimonial-card:nth-child(1) {
+    grid-column: 1 / span 2;
+    /* Torna o card maior para o visual de banner */
+    min-height: 34rem;
+  }
+
+  /* Os Cards 2 e 3 (Ricardo e Ana Paula) ocupam 1fr cada na segunda linha, 
+     heredando o min-height de 25rem, garantindo o alinhamento visual. */
+  .testimonial-grid > .testimonial-card:nth-child(2),
+  .testimonial-grid > .testimonial-card:nth-child(3) {
+    min-height: 25rem;
+  }
+
+  /* ... outros estilos desktop ... */
 }
 
 /* ==========================================================================
@@ -641,12 +713,12 @@ img {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================================================
@@ -662,129 +734,129 @@ img {
 /* ==========================================================================
    PROJECTS PAGE STYLES (with Image Carousel)
    ========================================================================== */
-   .projects-grid {
-    display: grid;
-    gap: 3.2rem;
-  }
-  
-  .project-card {
-    background: var(--secondary-color);
-    border-radius: 2.4rem;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* --- KEY ARCHITECTURAL CHANGE (START) --- */
-  .project-carousel-wrapper {
-    position: relative; /* Anchor for absolutely positioned children */
-    aspect-ratio: 16 / 10;
-    width: 100%;
-  }
-  
-  .project-image-carousel {
-    /* Take the carousel out of the document flow to bypass the WebKit bug */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    display: flex; /* Flexbox is safe to use here now its dimensions are absolute */
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .project-image-carousel::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .project-image-carousel img {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    object-fit: cover;
-  }
-  /* --- KEY ARCHITECTURAL CHANGE (END) --- */
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-  }
-  .project-carousel-wrapper:hover .carousel-btn,
-  .project-carousel-wrapper:focus-within .carousel-btn {
-    opacity: 1;
-  }
-  .carousel-btn:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-  }
-  .carousel-btn.prev {
-    left: 1.6rem;
-  }
-  .carousel-btn.next {
-    right: 1.6rem;
-  }
-  .carousel-btn.hidden {
-    opacity: 0 !important;
-    pointer-events: none;
-  }
-  
-  .carousel-pagination {
-      position: absolute;
-      bottom: 1.6rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 0.8rem;
-      z-index: 10;
-  }
-  
-  .pagination-dot {
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.5);
-      transition: background-color 0.3s ease;
-  }
-  
-  .pagination-dot.active {
-      background-color: #ffffff;
-  }
-  
-  .project-info {
-    padding: 2.4rem;
-  }
-  .project-info h3 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  .project-info p:first-of-type {
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-bottom: 1.6rem;
-  }
-  .project-info p:last-of-type {
-    color: var(--text-muted);
-  }
+.projects-grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.project-card {
+  background: var(--secondary-color);
+  border-radius: 2.4rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- KEY ARCHITECTURAL CHANGE (START) --- */
+.project-carousel-wrapper {
+  position: relative; /* Anchor for absolutely positioned children */
+  aspect-ratio: 16 / 10;
+  width: 100%;
+}
+
+.project-image-carousel {
+  /* Take the carousel out of the document flow to bypass the WebKit bug */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex; /* Flexbox is safe to use here now its dimensions are absolute */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.project-image-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-image-carousel img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+/* --- KEY ARCHITECTURAL CHANGE (END) --- */
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+.project-carousel-wrapper:hover .carousel-btn,
+.project-carousel-wrapper:focus-within .carousel-btn {
+  opacity: 1;
+}
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel-btn.prev {
+  left: 1.6rem;
+}
+.carousel-btn.next {
+  right: 1.6rem;
+}
+.carousel-btn.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.carousel-pagination {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  z-index: 10;
+}
+
+.pagination-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.pagination-dot.active {
+  background-color: #ffffff;
+}
+
+.project-info {
+  padding: 2.4rem;
+}
+.project-info h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.project-info p:first-of-type {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.project-info p:last-of-type {
+  color: var(--text-muted);
+}
 
 /* ==========================================================================
    ABOUT PAGE STYLES
@@ -800,7 +872,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .story-content p {
@@ -910,7 +982,7 @@ img {
 }
 .footer-institutional a:hover {
   text-decoration: underline;
-} 
+}
 
 /* ==========================================================================
    6. DESKTOP STYLES (min-width: 769px)
@@ -923,7 +995,7 @@ img {
   .hamburger-menu {
     display: none;
   }
-  
+
   .header-actions {
     display: flex;
     align-items: center;
@@ -947,11 +1019,11 @@ img {
   }
 
   .desktop-nav a:hover {
-      color: var(--accent-color);
+    color: var(--accent-color);
   }
 
   .desktop-nav a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -996,25 +1068,25 @@ img {
     /* but the JS scrolling functionality will still work. */
     overflow: hidden;
   }
-  
+
   .courses-gallery-wrapper {
     cursor: default;
   }
 
   .course-card {
-      flex-basis: calc((100% - 3.2rem) / 3);
+    flex-basis: calc((100% - 3.2rem) / 3);
   }
 
   .carousel-nav {
-      display: block;
+    display: block;
   }
 
   .carousel-button.prev {
-      left: -2.4rem;
+    left: -2.4rem;
   }
 
   .carousel-button.next {
-      right: -2.4rem;
+    right: -2.4rem;
   }
 
   #benefits .benefit-grid {
@@ -1048,10 +1120,10 @@ img {
     grid-template-columns: 1fr 1.2fr; /* Give slightly more space to the form */
     align-items: flex-start;
   }
-  
+
   .contact-submit-button {
-      width: auto;
-      padding-inline: 4.8rem;
+    width: auto;
+    padding-inline: 4.8rem;
   }
 
   .process-grid {
@@ -1065,7 +1137,7 @@ img {
   .cta-content h2 {
     font-size: 3.2rem;
   }
-  
+
   .courses-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1089,4 +1161,3 @@ img {
     text-align: right;
   }
 }
-

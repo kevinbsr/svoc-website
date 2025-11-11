@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - SVoc</title>
-    
-    <!-- Links to existing CSS and Fonts -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animations.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-
-    <!-- Reusing the exact same header for consistency -->
     <header class="site-header">
         <div class="wrapper">
-            <a href="index.html" class="site-logo">
-                <h1><span class="bolder">SV</span>oc</h1>
+            <a href="/" class="site-logo">
+                <img src="/images/logo.png" alt="svoc logo">
             </a>
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="consultoria.html">Consultoria</a></li>
-                    <li><a href="cursos.html">Nossos Cursos</a></li>
-                    <li><a href="projetos.html">Projetos & Obras</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="/consultoria/">Consultoria</a></li>
+                    <li><a href="/cursos/">Nossos Cursos</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -42,15 +38,12 @@
             </div>
         </div>
     </header>
-
-    <!-- Reusing the mobile navigation menu -->
     <nav class="mobile-nav">
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="consultoria.html">Consultoria</a></li>
-            <li><a href="cursos.html">Nossos Cursos</a></li>
-            <li><a href="projetos.html">Projetos & Obras</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/">Início</a></li>
+            <li><a href="/consultoria/">Consultoria</a></li>
+            <li><a href="/cursos/">Nossos Cursos</a></li>
+            <li><a href="/sobre/">Sobre</a></li>
             <li>
                 <button onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline', '_blank')" class="mobile-button">
                     Virar aluno
@@ -59,9 +52,7 @@
             </li>
         </ul>
     </nav>
-
     <main>
-        <!-- Page-specific Hero Section -->
         <section class="hero section-padding">
             <div class="wrapper stagger-animation">
                 <div class="hero-text">
@@ -70,8 +61,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Our Story Section -->
         <section id="our-story" class="section-padding" style="background-color: #fff;">
             <div class="wrapper story-wrapper stagger-animation">
                 <div class="story-image animate-on-scroll">
@@ -84,13 +73,11 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Reusing the Profile Card component for the founders -->
         <section id="founders" class="section-padding">
              <div class="wrapper">
                 <h2 class="section-title animate-on-scroll">Nossos fundadores</h2>
                 <div class="profile-card animate-on-scroll">
-                    <img src="public/sheila-pic.jpeg" alt="Foto da fundadora Sheila Vieira">
+                    <img src="/images/sheila-pic.jpeg" alt="Foto da fundadora Sheila Vieira">
                     <div class="text-infos">
                         <h3>Sheila Vieira</h3>
                         <p class="role">Sócia Fundadora</p>
@@ -98,7 +85,7 @@
                     </div>
                 </div>
                 <div class="profile-card reverse animate-on-scroll">
-                    <img src="public/rafael-pic.jpg" alt="Foto do fundador Rafael Saraiva">
+                    <img src="/images/rafael-pic.jpg" alt="Foto do fundador Rafael Saraiva">
                     <div class="text-infos">
                         <h3>Rafael Saraiva</h3>
                         <p class="role">Sócio Diretor</p>
@@ -107,21 +94,16 @@
                 </div>
             </div>
         </section>
-
-        <!-- Reusing the Call to Action component -->
         <section id="cta" class="section-padding">
             <div class="wrapper animate-on-scroll">
                 <div class="cta-content">
                     <h2>Pronto para dar o próximo passo?</h2>
                     <p>Junte-se a centenas de profissionais que transformaram suas carreiras com nossos cursos e consultorias.</p>
-                    <a href="cursos.html" class="cta-button">Conheça nossos cursos</a>
+                    <a href="/cursos/" class="cta-button">Conheça nossos cursos</a>
                 </div>
             </div>
         </section>
-
     </main>
-
-    <!-- Reusing the exact same footer for consistency -->
     <footer class="site-footer section-padding">
         <div class="wrapper">
             <div class="footer-company">
@@ -135,8 +117,7 @@
         </div>
     </footer>
 
-    <!-- This script is shared across all pages -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/animations.js"></script>
 </body>
 </html>

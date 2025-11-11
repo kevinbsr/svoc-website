@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Cursos - SVoc</title>
-    
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
+    <title>Nossos Cursos - SVoc</title> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animations.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -15,15 +15,14 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <a href="index.html" class="site-logo">
-                <h1><span class="bolder">SV</span>oc</h1>
+            <a href="/" class="site-logo">
+                <img src="/images/logo.png" alt="svoc logo">
             </a>
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="consultoria.html">Consultoria</a></li>
-                    <li><a href="cursos.html">Nossos Cursos</a></li>
-                    <li><a href="projetos.html">Projetos & Obras</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="/consultoria/">Consultoria</a></li>
+                    <li><a href="/cursos/">Nossos Cursos</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -41,11 +40,11 @@
     </header>
     <nav class="mobile-nav">
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="consultoria.html">Consultoria</a></li>
-            <li><a href="cursos.html">Nossos Cursos</a></li>
-            <li><a href="projetos.html">Projetos & Obras</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/">Início</a></li>
+            <li><a href="/consultoria/">Consultoria</a></li>
+            <li><a href="/cursos/">Nossos Cursos</a></li>
+            <li><a href="/projetos/">Projetos & Obras</a></li>
+            <li><a href="/sobre/">Sobre</a></li>
             <li>
                 <button onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline', '_blank')" class="mobile-button">
                     Virar aluno
@@ -54,7 +53,6 @@
             </li>
         </ul>
     </nav>
-
     <main>
         <section class="hero section-padding">
             <div class="wrapper">
@@ -64,7 +62,6 @@
                 </div>
             </div>
         </section>
-
         <section id="all-courses" class="section-padding" style="background-color: #fff;">
             <div class="wrapper">
                 <h2 class="section-title animate-on-scroll">Todos os Cursos</h2>
@@ -130,84 +127,217 @@
             <div class="wrapper">
                 <h2 class="section-title animate-on-scroll">Combos de Cursos</h2>
                 <div class="courses-grid stagger-animation">
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3120711', '_blank')" class="course-card autocad animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3120711', '_blank')" class="course-card construsmart animate-on-scroll">
                         <div class="card-content">
-                            <h3>Gestão de obras + Perícia + Regularização de imóveis</h3>
+                            <h3>ConstruSmart</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>3 Cursos</span>
+                                <span>R$ 550,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3115767', '_blank')" class="course-card patologias animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3115767', '_blank')" class="course-card expert animate-on-scroll">
                         <div class="card-content">
-                            <h3>Expert Quatro Cursos</h3>
+                            <h3>Nível Expert</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>4 Cursos</span>
+                                <span>R$ 659,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/2712652', '_blank')" class="course-card pericia animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/2712652', '_blank')" class="course-card base-solida animate-on-scroll">
                         <div class="card-content">
-                            <h3>Perícia + Regularização + Patologias</h3>
+                            <h3>Base Sólida</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>3 Cursos</span>
+                                <span>R$ 499,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3116280', '_blank')" class="course-card pericia-geral animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3116280', '_blank')" class="course-card obra-total animate-on-scroll">
                         <div class="card-content">
-                            <h3>All in</h3>
+                            <h3>All in - Obra Total</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>Acesso Integral</span>
+                                <span>R$ 457,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card regularizacao animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card diagnostico-avancado animate-on-scroll">
                         <div class="card-content">
-                            <h3>Perícia + Patologias Construtivas</h3>
+                            <h3>Diagnóstico Avançado</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>3 Cursos</span>
+                                <span>R$ 400,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card regularizacao animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card peritopro animate-on-scroll">
                         <div class="card-content">
-                            <h3>Perícia completo para engenheiros de produção</h3>
+                            <h3>Perito Pro</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>2 Cursos</span>
+                                <span>R$ 350,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card regularizacao animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card mao-na-obra animate-on-scroll">
                         <div class="card-content">
-                            <h3>Perícia + Regularização de imóveis</h3>
+                            <h3>Mão na Obra</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>3 Cursos</span>
+                                <span>R$ 350,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card regularizacao animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card expert animate-on-scroll">
                         <div class="card-content">
-                            <h3>Quatro Cursos II</h3>
+                            <h3>Nível Expert II</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>4 Cursos</span>
+                                <span>R$ 659,00</span>
                             </div>
                         </div>
                     </div>
-                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card gestao animate-on-scroll">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
                         <div class="card-content">
                             <h3>Perícia + Regularização de imóveis + Patologias Construtivas</h3>
                             <div class="card-footer">
-                                <span>N Cursos</span>
-                                <span>R$ XXX,xx</span>
+                                <span>4 Cursos</span>
+                                <span>R$ 550,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="all-courses" class="section-padding" style="background-color: #fff;">
+            <div class="wrapper">
+                <h2 class="section-title animate-on-scroll">Cursos Gratuitos</h2>
+                <div class="courses-grid stagger-animation">
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3120711', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Arquitetura</h3>
+                            <div class="card-footer">
+                                <span>102 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3115767', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Jardinagem e Paisagismo</h3>
+                            <div class="card-footer">
+                                <span>55 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/2712652', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Perícia Técnica Judicial</h3>
+                            <div class="card-footer">
+                                <span>231 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/3116280', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Concurso para Arquitetos e Engenheiros</h3>
+                            <div class="card-footer">
+                                <span>13 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1931098', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Perícia Técnica Judicial para Arquitetos e Engenheiros</h3>
+                            <div class="card-footer">
+                                <span>34 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Marketing Digital</h3>
+                            <div class="card-footer">
+                                <span>22 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Marca Pessoal</h3>
+                            <div class="card-footer">
+                                <span>4 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Instagram para Arquitetos e Engenheiros</h3>
+                            <div class="card-footer">
+                                <span>12 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Dicas para arquitetos e engenheiros</h3>
+                            <div class="card-footer">
+                                <span>181 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Gestão de obras</h3>
+                            <div class="card-footer">
+                                <span>39 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Construção da carreira de destaque</h3>
+                            <div class="card-footer">
+                                <span>27 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Patologias construtivas</h3>
+                            <div class="card-footer">
+                                <span>42 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Regularização de imóveis</h3>
+                            <div class="card-footer">
+                                <span>26 aulas</span>
+                                <span>Grátis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https://hotmart.com/pt-br/club/svoccursosonline/products/1943360', '_blank')" class="course-card animate-on-scroll">
+                        <div class="card-content">
+                            <h3>Perícia Técnica para Engenheiros de Produção</h3>
+                            <div class="card-footer">
+                                <span>12 aulas</span>
+                                <span>Grátis</span>
                             </div>
                         </div>
                     </div>
@@ -218,7 +348,6 @@
             <div class="wrapper">
                 <h2 class="section-title animate-on-scroll">Perguntas Frequentes</h2>
                 <div class="faq-container stagger-animation">
-                    
                     <div class="faq-item animate-on-scroll">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer">
                             <span>O acesso é vitalício?</span>
@@ -230,7 +359,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="faq-item animate-on-scroll">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer">
                             <span>O curso oferece certificado?</span>
@@ -242,7 +370,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="faq-item animate-on-scroll">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer">
                             <span>Quais são as formas de pagamento?</span>
@@ -254,7 +381,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="faq-item animate-on-scroll">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer">
                             <span>Como posso tirar minhas dúvidas?</span>
@@ -266,7 +392,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="faq-item animate-on-scroll">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq5-answer">
                             <span>Para quem são os cursos?</span>
@@ -278,7 +403,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -296,8 +420,7 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/animations.js"></script>
 </body>
 </html>
-
